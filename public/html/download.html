@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/icon/favicon.png">
+    <title>downloadAPP</title>
+    <link rel="stylesheet" href="../style/reset.css"/>
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/download.css"/>
+    <script type="text/javascript" src="../js/jquery-1.10.1.js"></script>
+    <script type="text/javascript" src="../js/header.js"></script>
+
+</head>
+<body>
+<header class="header-wrapper clearfix">
+    <div class="logo-container">
+        <a href="/"><img src="../img/icon/logo-white.png" alt=""></a>
+        <a href="/" style="display: none;"><img src="../img/icon/logo-fixed.png" alt=""></a>
+    </div>
+    <div class="menu-container">
+        <ul class="menu clearfix">
+            <!--切换城市导航项-->
+            <li id="position">
+                <a href="javascript:;">
+                    <img src="../img/icon/citypoint.png">
+                    <i id="current-position">北京</i>
+                    <i id="toggleCity">切换城市<span class="arrow"></span></i>
+                </a>
+                <div class="content hide">
+                    <div class="address-select">
+                        <div class="select">
+                            <strong>选择新地址</strong>
+                            <span class="arrow"></span>
+                        </div>
+                        <div class="stock-address-list">
+                            <div class="address-tab">
+                                <ul class="tab clearfix">
+                                    <li id="province" class="">北京</li>
+                                    <li id="city" class="">北京市</li>
+                                    <li id="county" class="current">西城区</li>
+                                    <li style="display:none">请选择</li>
+                                </ul>
+                                <div class="tab-con">
+                                    <ul class="item hide" id="provinces">
+                                        <li data-name="36"><a href="#none">北京</a></li>
+                                    </ul>
+                                    <ul class="item hide" id="cities">
+                                        <li data-name="5"><a href="#none">朝阳区</a></li>
+                                    </ul>
+                                    <ul class="item" id="counties">
+                                        <li data-name="67"><a href="#none">四环到五环之间</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!--其他导航项-->
+            <li class="active">
+                <!--请求链接--><!--<a href="/">首页</a>-->
+                <a href="/">首页</a>
+            </li>
+            <li>
+                <!--<a href="/downloadAPP">下载APP</a>-->
+                <a href="/html/download.html">下载APP</a>
+            </li>
+            <li>
+                <!--<a href="/service">服务商</a>-->
+                <a href="/html/supplier.html">服务商</a>
+            </li>
+            <li>
+                <!--<a href="/information">商家入驻</a>-->
+                <a href="/html/join.html">商家入驻</a>
+            </li>
+            <li>
+                <!--<a href="/aboutus">关于我们</a>-->
+                <a href="/html/about.html">关于我们</a>
+            </li>
+            <!--商户登录注册选项-->
+            <li>
+                <!--<a id="shanghu" class="shanghu" target="_blank" href="http://www.daoway.com/dian/">商家登录</a>-->
+                <a id="seller" href="/login">商家登录</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+
+<div class="banner-wrapper down-content">
+    <div class="banner">
+        <dl class="app">
+            <dt>
+                <img src="http://www.daoway.cn/pcimages/app-yong-ma.png">
+            </dt>
+            <dd class="ios">
+                <a href="https://itunes.apple.com/cn/app/dao-wei-shang-men-fu-wu-hui/id953936745?mt=8">
+                    <img src="http://www.daoway.cn/pcimages/iph.png">
+                    iPhone下载
+                </a>
+            </dd>
+            <dd>
+                <a href="http://api.daoway.cn/download/daoway-android.apk">
+                    <img src="http://www.daoway.cn/pcimages/and.png">
+                    Android下载
+                </a>
+            </dd>
+        </dl>
+    </div>
+    <div class="show-serve">
+        <div class="container">
+            <img src="http://www.daoway.cn/pcimages/xiazaiye-_05.jpg">
+            <p>精选优质服务&nbsp;&nbsp;&nbsp;&nbsp;全程品质保障</p>
+            <ul class="serve-list">
+                <li>
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_09.jpg">
+                    <span>
+          <i><b>家政</b></i><i>小时工/保姆/阿姨/月嫂</i>
+        </span>
+                </li>
+                <li>
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_11.jpg" width="168" height="166">
+                    <span><i><b>按摩</b></i><i>中医推拿/油压/SPA<br>足疗保健</i></span>
+                </li>
+                <li>
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_13.jpg" width="168" height="166">
+                    <span style="position: relative; right:10px"><i><b>维修</b></i><i>手机维修/家电维修/电脑维修</i></span>
+                </li>
+                <li>
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_18.jpg" width="168" height="166">
+                    <span><i><b>家电清洗</b></i><i>冰箱/洗衣机/油烟机</i></span>
+                </li>
+                <li>
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_19.jpg" width="168" height="166">
+                    <span><i><b>洗衣洗鞋</b></i><i>洗衣/洗鞋/洗包/家纺</i></span>
+                </li>
+                <li>
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_20.jpg" width="168" height="166">
+                    <span><i><b>搬家</b></i><i>家具拆装/大件搬运</i></span>
+                </li>
+                <li>
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_24.jpg" width="168" height="166">
+                    <span><i><b>养容养体</b></i><i>美体塑形/养生护理<br>美容美甲/美眉/化妆</i></span>
+                </li>
+                <li>
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_25.jpg" width="168" height="166">
+                    <span><i><b>上门养车</b></i><i>爱车保养/维修检测<br>清洁养护/洗车/保养</i></span>
+                </li>
+                <li>
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_26.jpg" width="168" height="166">
+                    <span><i><b>鲜花</b></i><i>礼品花束/家庭用花/花篮</i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="serve-ad">
+        <div class="container">
+            <div class="ad-wrap clear">
+                <div class="text">
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_34.jpg">
+                    <br>
+                    轻松比价格&nbsp;&nbsp;&nbsp;&nbsp;比品质&nbsp;&nbsp;&nbsp;&nbsp;比速度
+                </div>
+                <img src="http://www.daoway.cn/pcimages/xiazaiye-_31.jpg" width="305" height="auto">
+            </div>
+        </div>
+    </div>
+
+    <div class="serve-ad white">
+        <div class="container">
+            <div class="ad-wrap left clear">
+                <div class="text">
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_03.jpg">
+                    <br>
+                    不满意重做&nbsp;&nbsp;&nbsp;&nbsp;未成交100%退款
+                </div>
+                <img src="http://www.daoway.cn/pcimages/xiazaiye-_39.jpg" width="614" height="auto">
+            </div>
+        </div>
+    </div>
+
+    <div class="serve-ad">
+        <div class="container">
+            <div class="ad-wrap clear">
+                <div class="text">
+                    <img src="http://www.daoway.cn/pcimages/xiazaiye-_45.jpg" width="183" height="30">
+                    <br>
+                    到位用户专享&nbsp;&nbsp;&nbsp;&nbsp;好服务更便宜
+                </div>
+                <img src="http://www.daoway.cn/pcimages/xiazaiye-_43.jpg" width="401" height="378">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<footer>
+    <div class="footer_title">
+        <h2>到位<span>服务</span>保障</h2>
+        <p>到位平台担保交易安全，交易未成功100%退款</p>
+    </div>
+
+    <div class="footer_server">
+        <ul>
+            <li><img src="../img/icon/quan.png" width="44" height="44"><br>服务多</li>
+            <li><img src="../img/icon/quan.png" width="44" height="44"><br>上门快</li>
+            <li><img src="../img/icon/quan.png" width="44" height="44"><br>有保障</li>
+        </ul>
+    </div>
+
+    <div class="footer_city">
+        <div class="footer_city_title">热门城市</div>
+        <div class="footer_city_content">
+            <i>北京</i><i>上海</i><i>广州</i><i>深圳</i><i>成都</i><i>天津</i><i>南京</i><i>杭州</i><i>重庆</i><i>苏州</i><i>武汉</i><i>长沙</i><i>济南</i><i>郑州</i><i>西安</i><i>沈阳</i><i>福州</i><i>厦门</i><i>南昌</i><i>合肥</i><i>宁波</i><i>无锡</i><i>青岛</i><i>大连</i><i>东莞</i><i>佛山</i><i>石家庄</i><i>哈尔滨</i><i>太原</i><i>昆明</i><i>贵阳</i><i>南宁</i><i>温州</i>
+        </div>
+    </div>
+
+    <div class="footer_copy">
+        <p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1</p>
+        <p>北京邻家科技有限公司 </p>
+    </div>
+</footer>
+</body>
+</html>

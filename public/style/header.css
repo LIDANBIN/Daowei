@@ -1,0 +1,136 @@
+@import "position.css";
+
+/*头部导航*/
+.header-wrapper {
+    width: auto;
+    /*固定导航 应该用js完成*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*z-index: 1;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    /*background: rgba(255, 255, 255, .96);*/
+    /*使padding-right、margin-right生效*/
+    /*width: 100%;*/
+    /*box-sizing:border-box;*/
+    padding: 2px 85px;
+    border-bottom: 1px solid #e5e5e5;
+    /*box-shadow: 1px 1px 4px 0 rgb(246,246,246);*/
+}
+
+/*设置当页面宽度小于1080px时 导航条的宽度*/
+@media (max-width: 1280px) {
+    .header-wrapper {
+        width: 1280px;
+        padding: 2px 15px;
+        margin: 0;
+    }
+}
+/*动画样式------------------------------*/
+.fixed-animated {
+    animation-name: fixedHeader;
+    animation-duration: .8s;
+    transform-origin: center top;
+}
+.navbar-fixed-top {
+    background-color: rgba(255, 255, 255, .96);
+    transform-origin: center top;
+    border: none;
+    z-index: 999;
+    right: 0;
+    left: 0;
+    position: fixed;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+@keyframes fixedHeader {
+    0% {
+        opacity: 0;
+        transform: rotateX(100deg);
+        -webkit-transform: rotateX(100deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+    }
+}
+/*动画样式------------------------------*/
+
+/*导航的高度由子元素a标签撑开*/
+/*头部左侧logo*/
+.logo-container {
+    float: left;
+}
+
+.logo-container a {
+    display: inline-block;
+    height: 65px;
+}
+
+.logo-container a img {
+    margin-top: 10px;
+}
+
+/*头部右侧菜单*/
+.menu-container {
+    float: right;
+    margin-top: 10px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: rgb(18, 18, 18);
+}
+
+/*设置切换城市选项样式*/
+.menu li#position {
+    width: 300px;
+    white-space: nowrap;
+}
+.menu li#position i {
+    font-weight: bold;
+    color: rgb(18, 18, 18);
+}
+i#toggleCity span {
+    vertical-align: middle;
+    display: inline-block;
+    width: 13px;
+    height: 7px;
+    margin: 0 10px 0 5px;
+    background: url("../img/icon/arr-close.png");
+}
+
+.menu li#position i:hover span {
+    transition: .2s;
+    transform: rotate(180deg);
+}
+
+/*设置商户导航选项的样式*/
+.menu li a#seller {
+    color: rgb(255, 255, 255);
+    background: rgb(233, 72, 64);
+    margin: 5px 10px 0 15px;
+    padding: 6px 6px;
+    border-radius: 5px;
+}
+
+/*选项被选中时的样式*/
+.menu li.active a {
+    color: rgb(233, 72, 64);
+}
+
+/*鼠标悬浮时的样式*/
+.menu li:hover>a {
+    color: rgb(233, 72, 64);
+}
+
+.menu li:hover i#toggleCity {
+    color: rgb(233, 72, 64);
+}

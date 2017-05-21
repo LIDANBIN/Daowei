@@ -1,0 +1,114 @@
+@import "style.css";
+
+.login-wrapper {
+    width: 298px;
+    padding: 15px 15px 0 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -165px;
+    margin-top: -162px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+.login-wrapper h1 {
+    text-indent: -999px;
+    height: 70px;
+    background: url("../img/icon/houtai-logo.png") no-repeat;
+    background-size: contain;
+}
+
+/*输入框*/
+.login-wrapper input {
+    box-shadow: 0 0 2px rgb(204, 204, 204) inset;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    padding: 14px 44px 14px 14px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.login-wrapper input::-webkit-input-placeholder {
+    color: rgb(153, 159, 178);
+    font-size: 16px;
+}
+
+.login-wrapper input:focus {
+    box-shadow: 0 0 8px rgb(91, 152, 193);
+    border: 1px solid rgb(91, 152, 193);
+}
+
+.login-wrapper div:first-of-type input {
+    border-bottom: none;
+    border-radius: 0 5px 0 0/0 5px 0 0;
+}
+
+.login-wrapper div:last-of-type input {
+    /*通过/区分水平半径和垂直半径*/
+    border-radius: 0 0 5px 0/0 0 5px 0;
+}
+/*验证提示信息*/
+.prompt {
+    box-sizing: border-box;
+    width: 100%;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 10px 0;
+}
+.prompt.hide {
+    display: none;
+}
+
+/*图标*/
+span.icon-user, span.icon-lock {
+    float: left;
+    background: rgb(238, 238, 238);
+    font-size: 16px;
+    padding: 15px 12px;
+    border: 1px solid rgb(204, 204, 204);
+    border-right: none;
+}
+
+span.icon-user {
+    border-bottom: none;
+    border-radius: 5px 0 0 0/5px 0 0 0;
+}
+
+span.icon-lock {
+    /*通过/区分水平半径和垂直半径*/
+    border-radius: 0 0 0 5px/0 0 0 5px;
+}
+
+/*提交按钮*/
+.login-wrapper button {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    outline: none;
+    background: rgb(51, 122, 183);
+    border: 1px solid rgb(46, 109, 164);
+    border-radius: 6px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.login-wrapper button:hover {
+    background: #2e6da4;
+}
+
+/*忘记密码*/
+.login-wrapper div.else a {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #2e6da4;
+    line-height: 58px;
+}
+
+div.else a:last-child {
+    float: right;
+}

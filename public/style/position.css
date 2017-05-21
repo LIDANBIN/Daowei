@@ -1,0 +1,96 @@
+/*小图形样式*/
+span.arrow-1 {
+    vertical-align: middle;
+    display: inline-block;
+    width: 13px;
+    height: 23px;
+    margin: 0 10px 0 5px;
+    background: url("../img/icon/arr-close.png") center no-repeat;
+    float: right;
+}
+.text:hover .arrow-1 {
+    transition: .2s;
+    transform: rotate(180deg);
+}
+.address-select:hover .arrow-1 {
+    transition: .2s;
+    transform: rotate(180deg);
+}
+
+/*隐藏样式*/
+.hide {
+    display: none;
+}
+
+/*城市列表区*/
+.content {
+    position: absolute;
+    margin-top: 10px;
+    top: 43px;
+    clear: both;
+    width: 340px;
+    padding: 10px;
+    color: #666;
+    background: #ffffff;
+    line-height: 23px;
+    border: 1px solid #ccc;
+    z-index: 5;
+}
+/*列表区------选择 头部*/
+.content .select strong {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*------------------------------------*/
+/*列表区-------选项卡*/
+/*列表区-------选项卡--菜单栏*/
+.address-tab .tab {
+    margin-top: 20px;
+    box-shadow: 0 -1px 0 rgb(233, 72, 64) inset;
+}
+
+.address-tab .tab li {
+    float: left;
+    color: #2e6da4;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 3px 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    background: #ffffff;
+    border-bottom: none;
+}
+.address-tab .tab li.current {
+    border: 2px solid rgb(233, 72, 64);
+    border-bottom: none;
+    box-shadow: 0 2px #fff;
+}
+/*列表区-------选项卡--城市详情列表区*/
+.address-tab .tab-con {
+    border-top: 1px solid rgb(233, 72, 64);
+    padding-top: 10px;
+}
+
+.tab-con li {
+    float: left;
+    width: 25%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab-con li a {
+    display: block;
+    color: #222;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+

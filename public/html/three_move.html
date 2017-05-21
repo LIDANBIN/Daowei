@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="selProvince">
+    <option value="">--请选择省份--</option>
+</select>
+<select id="selCity">
+    <option value="">--请选择城市--</option>
+</select>
+<select id="selCounty">
+    <option value="">--请选择区/县--</option>
+</select>
+
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        var $province = $('#selProvince');
+        var $city = $('#selCity');
+        var $county = $('#selCounty');
+
+        //页面加载数据
+        $.getJSON('/provinces', function (data) {
+            //console.log(data);
+//            <option value="">--请选择省份--</option>
+            data.forEach(function (ele, index) {
+                var id = ele.id;
+                var name = ele.province;
+                var option = '<option value="' + id + '">' + name + '</option>';
+                $(option).appendTo($province);
+            });
+        });
+
+        //选择省 加载城市列表
+        $province.change(function () {
+            //换省
+            $city.empty();
+            $city.append('<option value="">--请选择城市--</option>');
+//            $city.children('option:not(:first)').remove();
+            //获得 provinceID
+            var provinceID = this.value;
+//            console.log(provinceID);
+            if ('' === provinceID) {
+                return;
+            }
+            //请求数据
+            $.getJSON('/cities', {provinceID: provinceID}, function (data) {
+                //城市列表  数组
+                data.forEach(function (ele, index) {
+                    var id = ele.id;
+                    var name = ele.city;
+                    var option = '<option value="' + id + '">' + name + '</option>';
+                    $(option).appendTo($city);
+                });
+            });
+        });
+
+        //显示区县
+        $city.change(function () {
+            //换市
+            $county.empty();
+            $county.append('<option value="">--请选择区/县--</option>');
+
+            // 城市的id
+            var cityID = this.value;
+            if ('' === cityID) {
+                return;
+            }
+
+            $.getJSON('/counties', {cityID: cityID}, function (data) {
+                //区县列表  数组
+                data.forEach(function (ele, index) {
+                    var id = ele.id;
+                    var name = ele.county;
+                    var option = '<option value="' + id + '">' + name + '</option>';
+                    $(option).appendTo($county);
+                });
+            })
+        });
+    });
+
+
+</script>
+</body>
+</html>

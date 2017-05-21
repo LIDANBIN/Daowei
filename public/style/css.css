@@ -1,0 +1,196 @@
+/*全局样式*/
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*---------------------header-----------------------*/
+header {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E5E5E5;
+}
+header .nav {
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  height: 65px;
+  color: #000;
+  font-weight: bold;
+  margin: 0 50px;
+}
+header .nav .nav_logo_wrap {
+  background: url(../image/logo.png) center no-repeat;
+  width: 240px;
+  height: 65px;
+  float: left;
+}
+header .nav .nav_logo_wrap a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+header .nav .nav_bar_wrap {
+  /*定位城市*/
+  /*导航联系*/
+}
+header .nav .nav_bar_wrap .nav_fixed {
+  float: left;
+  width: 170px;
+  margin-left: 20px;
+  line-height: 65px;
+}
+header .nav .nav_bar_wrap .nav_fixed .nav_bar_city {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+header .nav .nav_bar_wrap .nav_fixed .nav_bar_chenga_city {
+  margin-right: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+header .nav .nav_bar_wrap .nav_fixed .nav_bar_chenga_city:hover {
+  color: #f00;
+}
+@media (max-width: 640px) {
+  header .nav .nav_bar_wrap .nav_fixed {
+    display: none;
+  }
+}
+header .nav .nav_bar_wrap .dis_none {
+  display: none;
+}
+header .nav .nav_bar_wrap .nav_bar_list {
+  float: right;
+  text-align: center;
+}
+header .nav .nav_bar_wrap .nav_bar_list li {
+  display: inline-block;
+  padding: 0 15px;
+}
+header .nav .nav_bar_wrap .nav_bar_list li a {
+  display: inline-block;
+  line-height: 65px;
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+header .nav .nav_bar_wrap .nav_bar_list li:hover a {
+  color: red;
+}
+header .nav .nav_bar_wrap .nav_bar_list li button {
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #f00;
+  outline: none;
+}
+header .nav .nav_bar_wrap .nav_bar_list li .active {
+  color: red;
+}
+@media (max-width: 1100px) {
+  header .nav .nav_bar_wrap .nav_bar_list {
+    float: right;
+    text-align: center;
+    height: 65px;
+    overflow: hidden;
+  }
+  header .nav .nav_bar_wrap .nav_bar_list li {
+    display: block;
+  }
+}
+@media (max-width: 460px) {
+  header .nav .nav_bar_wrap .nav_bar_list {
+    display: none;
+  }
+}
+/*@media (max-width: 1100px) {
+  header{
+    .nav {
+      .nav_bar_wrap {
+        .nav_bar_list {
+          height: 65px;
+          overflow: hidden;
+          li {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}*/
+/*-------------------轮  播  图---------------------*/
+/*-------------------footer---------------------*/
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+footer .footer_title {
+  margin: 10px 50px;
+  padding-top: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+footer .footer_title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+footer .footer_title h2 span {
+  color: red;
+  font-weight: bold;
+}
+footer .footer_server {
+  margin: 0 50px;
+  padding-top: 68px;
+  height: 160px;
+  text-align: center;
+}
+footer .footer_server li {
+  display: inline-block;
+  padding: 0 30px;
+}
+footer .footer_city {
+  padding-top: 50px;
+  margin: 0 50px;
+  overflow: hidden;
+}
+footer .footer_city .footer_city_title {
+  float: left;
+  line-height: 30px;
+}
+footer .footer_city .footer_city_content {
+  padding-left: 80px;
+  /*float: right;*/
+  text-align: left;
+  overflow: hidden;
+}
+footer .footer_city .footer_city_content i {
+  text-align: center;
+  display: inline-block;
+  line-height: 30px;
+  /*float: left;*/
+  width: 90px;
+  height: 30px;
+}
+footer .footer_copy {
+  width: 100%;
+  height: 130px;
+  padding-top: 50px;
+  background-color: #ffeeee;
+}
+footer .footer_copy p {
+  font-size: 12px;
+  color: #999999;
+  margin: 10px 50px;
+}

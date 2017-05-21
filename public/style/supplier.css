@@ -1,0 +1,344 @@
+body {
+  background-color: #fbf8f8;
+}
+
+
+
+
+
+header {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E5E5E5;
+}
+header .nav {
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  height: 65px;
+  color: #000;
+  font-weight: bold;
+  margin: 0 50px;
+}
+header .nav .nav_logo_wrap {
+  background: url(../image/logo.png) center no-repeat;
+  width: 240px;
+  height: 65px;
+  float: left;
+}
+header .nav .nav_logo_wrap a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+header .nav .nav_bar_wrap {
+  /*定位城市*/
+  /*导航联系*/
+}
+header .nav .nav_bar_wrap .nav_fixed {
+  float: left;
+  width: 170px;
+  margin-left: 20px;
+  line-height: 65px;
+}
+header .nav .nav_bar_wrap .nav_fixed .nav_bar_city {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+header .nav .nav_bar_wrap .nav_fixed .nav_bar_chenga_city {
+  margin-right: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+header .nav .nav_bar_wrap .nav_fixed .nav_bar_chenga_city:hover {
+  color: #f00;
+}
+@media (max-width: 640px) {
+  header .nav .nav_bar_wrap .nav_fixed {
+    display: none;
+  }
+}
+header .nav .nav_bar_wrap .dis_none {
+  display: none;
+}
+header .nav .nav_bar_wrap .nav_bar_list {
+  float: right;
+  text-align: center;
+}
+header .nav .nav_bar_wrap .nav_bar_list li {
+  display: inline-block;
+  padding: 0 15px;
+}
+header .nav .nav_bar_wrap .nav_bar_list li a {
+  display: inline-block;
+  line-height: 65px;
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+header .nav .nav_bar_wrap .nav_bar_list li:hover a {
+  color: red;
+}
+header .nav .nav_bar_wrap .nav_bar_list li button {
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #f00;
+  outline: none;
+}
+header .nav .nav_bar_wrap .nav_bar_list li .active {
+  color: red;
+}
+@media (max-width: 1100px) {
+  header .nav .nav_bar_wrap .nav_bar_list {
+    float: right;
+    text-align: center;
+    height: 65px;
+    overflow: hidden;
+  }
+  header .nav .nav_bar_wrap .nav_bar_list li {
+    display: block;
+  }
+}
+@media (max-width: 460px) {
+  header .nav .nav_bar_wrap .nav_bar_list {
+    display: none;
+  }
+}
+
+
+
+
+
+
+body .s-center h2 {
+  font: bold 18px/85px 'Microsoft YaHei';
+}
+body .s-center .s-content {
+  width: 970px;
+  float: left;
+  margin-bottom: 50px;
+}
+body .s-center .s-content .card-wrap .card-content {
+  font-size: 0;
+}
+body .s-center .s-content .card-wrap .card-content a.card {
+  padding: 10px;
+  width: 232px;
+  height: 300px;
+  background: #fff;
+  margin: 0 10px 10px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+}
+body .s-center .s-content .card-wrap .card-content a.card.card:hover {
+  box-shadow: 5px 5px 15px 0 #ccc;
+}
+body .s-center .s-content .card-wrap .card-content a.card img {
+  width: 210px;
+  vertical-align: middle;
+}
+body .s-center .s-content .card-wrap .card-content a.card p {
+  font-size: 16px;
+  line-height: 26px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body .s-center .s-content .card-wrap .card-content a.card .supplier-name {
+  padding: 10px 0 0;
+  height: 28px;
+}
+body .s-center .s-content .card-wrap .card-content a.card .supplier-name img {
+  width: 17px;
+  height: 17px;
+}
+body .s-center .s-content .card-wrap .card-content a.card .supplier-name b {
+  font-weight: 700;
+}
+body .s-center .s-content .card-wrap .card-content a.card .supplier-info {
+  color: #929292;
+  font-size: 12px;
+}
+body .s-center .s-content .card-wrap .card-content a.card .supplier-info i {
+  float: right;
+}
+body .s-center .s-content .card-wrap .s-more {
+  height: 152px;
+  line-height: 152px;
+  text-align: center;
+}
+body .s-center .s-content .card-wrap .s-more span {
+  width: 200px;
+  color: #b1b1b1;
+  font-size: 16px;
+  cursor: pointer;
+  background: #fff;
+  line-height: 50px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+}
+body .s-center .s-join {
+  width: 230px;
+  float: right;
+}
+body .s-center .s-join > img {
+  cursor: pointer;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+body .s-center .s-join .QR-code {
+  width: 230px;
+  height: 290px;
+  background: url(http://www.daoway.cn/pcimages/tuijianfuwushang_06.jpg) no-repeat;
+}
+body .s-center .s-join .QR-code img {
+  margin: 50px;
+  width: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+footer .footer_title {
+  margin: 10px 50px;
+  padding-top: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+footer .footer_title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+footer .footer_title h2 span {
+  color: red;
+  font-weight: bold;
+}
+footer .footer_server {
+  margin: 0 50px;
+  padding-top: 68px;
+  height: 160px;
+  text-align: center;
+}
+footer .footer_server li {
+  display: inline-block;
+  padding: 0 30px;
+}
+footer .footer_city {
+  padding-top: 50px;
+  margin: 0 50px;
+  overflow: hidden;
+}
+footer .footer_city .footer_city_title {
+  float: left;
+  line-height: 30px;
+}
+footer .footer_city .footer_city_content {
+  padding-left: 80px;
+  /*float: right;*/
+  text-align: left;
+  overflow: hidden;
+}
+footer .footer_city .footer_city_content i {
+  text-align: center;
+  display: inline-block;
+  line-height: 30px;
+  /*float: left;*/
+  width: 90px;
+  height: 30px;
+}
+footer .footer_copy {
+  width: 100%;
+  height: 130px;
+  padding-top: 50px;
+  background-color: #ffeeee;
+}
+footer .footer_copy p {
+  font-size: 12px;
+  color: #999999;
+  margin: 10px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+  color: #000;
+  font-weight: bold;
+}
+i {
+  font-style: normal;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.clear:after,
+.clear:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+.clear {
+  zoom: 1;
+}
+.btn {
+  display: inline-block;
+  height: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.btn-danger {
+  background-color: #e94840;
+  color: #fff;
+}
+/*翻折动画*/
+.show {
+  box-shadow: 0px 0px 5px 0px #888;
+  position: fixed;
+  animation: trunback 1s;
+}
+@keyframes trunback {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}

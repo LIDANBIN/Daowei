@@ -1,0 +1,409 @@
+@import "header.css";
+@import "footer.css";
+
+/*内容*/
+.banner-wrapper {
+    padding: 10px 85px;
+    background: rgb(248, 248, 248);
+}
+
+@media (max-width: 1280px) {
+    .banner-wrapper {
+        padding: 10px 15px;
+    }
+}
+
+/*标题*/
+.banner-wrapper .title {
+    line-height: 85px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+
+.title i.bright {
+    margin: 0 10px;
+}
+
+.title i.cnav {
+    color: rgb(251, 78, 85);
+    font-weight: 600;
+}
+
+/*分类*/
+.class-menu {
+    line-height: 50px;
+    background: #ffffff;
+    border: 1px solid rgb(234, 234, 234);
+    color: rgb(51, 51, 51);
+}
+
+.class-menu .classify {
+    color: #a9a9a9;
+    float: left;
+    text-align: center;
+    width: 100px;
+    padding: 0 10px;
+}
+
+.class-menu div {
+    float: left;
+}
+
+.class-menu .clickAble {
+    padding: 0 10px;
+    cursor: pointer;
+}
+.class-menu .clickAble:first-child {
+    padding: 0 10px;
+    pointer-events: none;
+}
+
+.class-menu .clickAble:hover {
+    color: rgb(251, 78, 85);
+}
+
+.class-menu .red {
+    color: rgb(232, 75, 71);
+}
+
+/*列表区--------------------------------------------------------------------*/
+.detail-wrapper {
+    margin-top: 10px;
+}
+
+@media (max-width: 1080px) {
+    .detail-wrapper {
+        width: 1080px;
+    }
+}
+
+/*左侧固定，右侧自适应*/
+/*左侧列表--------------------------------------------*/
+.detail-wrapper .left-wrapper {
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: -230px;
+    margin-left: 0;
+}
+
+.left-wrapper .left-inner {
+    margin-right: 240px;
+    /*box-sizing: border-box;*/
+}
+
+/*筛选导航*/
+.filter-menu {
+    background: #ffffff;
+    line-height: 60px;
+}
+
+.menus i {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.menus i img {
+    margin-left: 5px;
+}
+
+/*被选择时的样式*/
+.menus i.active {
+    color: rgb(251, 78, 85);
+    box-shadow: 0 -4px 0 0 #fb474f inset;
+}
+
+/*hover时的样式*/
+.menus i:hover {
+    color: rgb(251, 78, 85);
+    box-shadow: 0 -4px 0 0 #fb474f inset;
+}
+
+/*翻页区*/
+.pages {
+    float: right;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.pages i {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*当前页*/
+.pages i.count {
+    color: rgb(251, 78, 85);
+}
+
+/*向前按钮*/
+/*向后按钮*/
+.pages .next, .pages .prev {
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: 1px solid rgb(234, 234, 234);
+}
+.pages i.gray {
+    color: rgb(146, 146, 146);
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: 1px solid rgb(234, 234, 234);
+    /*禁止点击事件*/
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/*列表项*/
+.left-inner .items {
+    border: 1px solid rgb(234, 234, 234);
+}
+
+.left-inner .item {
+    background: #ffffff;
+    border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+.left-inner .item:last-child {
+    border-bottom: none;
+}
+
+/*详情页--------------------------------------------------样式*/
+.detail-item {
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+    padding: 20px;
+    color: rgb(25, 25, 25);
+    border: 1px solid rgb(234, 234, 234);
+}
+.detail-item-top {
+    border: 1px solid rgb(234, 234, 234);
+}
+.detail-item > b {
+    line-height: 30px;
+    display: inline-block;
+    margin: 10px 20px 10px 0;
+    box-shadow: 0 -3px 0 0 #fb474f inset;
+}
+/*详情页--------------------------------------------------样式*/
+
+
+
+/*图片*/
+.item .pic {
+    float: left;
+}
+
+.item .pic img {
+    height: 138px;
+    width: 138px;
+    margin: 30px;
+}
+
+/*基本信息*/
+.item .infos {
+    float: left;
+    width: 40%;
+}
+
+.infos {
+    line-height: 42px;
+}
+
+/*信息-名称*/
+.infos .detail-name {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 34px;
+}
+
+/*信息-介绍*/
+.infos .info {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    color: rgb(146, 146, 146);
+}
+
+/*信息-价格*/
+.infos .price b {
+    font-size: 20px;
+    color: #fc545e;
+    font-weight: 800;
+}
+
+.infos .price b em {
+    color: #fc545e;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*信息-评价*/
+.infos .rating {
+    font-size: 14px;
+    line-height: 34px;
+    color: rgb(146, 146, 146);
+}
+
+.infos .rating b {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.infos .rating b em {
+    font-style: normal;
+}
+
+/*配送信息*/
+.item .delivery {
+    float: right;
+    border: 1px solid #ff7871;
+    border-radius: 6px;
+    margin: 30px 30px 0 0;
+    overflow: hidden;
+}
+
+.delivery i {
+    text-align: center;
+    padding: 2px 6px;
+    font-size: 12px;
+    display: block;
+}
+
+.delivery i:first-child {
+    color: #ffffff;
+    background: #ff7871;
+}
+
+.delivery i:last-child {
+    color: #ff7871;
+    background: #ffffff;
+}
+
+/*底部切换页面*/
+.left-inner .toggle-page {
+    /*height: 152px;*/
+    text-align: center;
+    padding: 50px;
+    font-size: 0;
+}
+
+.toggle-page > div {
+    display: inline-block;
+}
+
+.toggle-page a {
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 6px;
+    background: #ffffff;
+    line-height: 30px;
+    display: inline-block;
+}
+
+#pages-list {
+    font-size: 14px;
+}
+
+#pages-list a.num {
+    width: 30px;
+    border-radius: 0;
+    color: #121212;
+    border: 1px solid #e5e5e5;
+    transition: color .2s linear;
+}
+
+#pages-list a.num:hover {
+    background: rgb(254, 69, 74);
+    color: #ffffff;
+}
+
+#pages-list a.active {
+    background: rgb(254, 69, 74);
+    color: #ffffff;
+}
+
+/*向前按钮*/
+/*向后按钮*/
+.toggle-page .next, .toggle-page .prev {
+    padding: 0 15px;
+    color: rgb(25, 25, 25);
+    border: 1px solid rgb(234, 234, 234);
+}
+.toggle-page a.gray {
+    color: rgb(146, 146, 146);
+    padding: 0 15px;
+    border: 1px solid rgb(234, 234, 234);
+    /*禁止点击事件*/
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/*右侧列表------------------------------------------------*/
+.detail-wrapper .right-wrapper {
+    background: #ffffff;
+    box-sizing: border-box;
+    float: left;
+    width: 230px;
+    border: 1px solid rgb(234, 234, 234);
+}
+
+.right-wrapper h3 {
+    line-height: 60px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+
+.service-provider {
+    text-align: center;
+}
+
+.service-provider img {
+    margin: 30px 50px 10px;
+    height: 70px;
+    width: 70px;
+}
+
+.service-provider .title {
+    font-weight: bold;
+    line-height: 36px;
+    font-size: 16px;
+}
+
+.service-provider .pline {
+    margin: 0 10px;
+    border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+.service-provider:last-child .pline {
+    border-bottom: none;
+}
+
+.service-provider .pline em {
+    font-style: normal;
+    font-size: 14px;
+    color: #929292;
+    line-height: 48px;
+}
+
+.pline em:last-child {
+    float: right;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三级联动</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/position.css">
+    <script type="text/javascript" src="../js/jquery-1.10.1.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="head clearfix">
+        <span class="text">北京朝阳区三环以内<span class="arrow"></span></span>
+        <div class="content">
+            <div class="address-select">
+                <div class="select">
+                    <strong>选择新地址</strong>
+                    <span class="arrow"></span>
+                </div>
+                <div class="stock-address-list">
+                    <div class="address-tab">
+                        <ul class="tab clearfix">
+                            <li class="current">北京</li>
+                            <li class="">朝阳区</li>
+                            <li class="">三环以内</li>
+                            <li style="display:none"></li>
+                        </ul>
+                        <div class="tab-con">
+                            <ul class="item hide">
+                                <li data-value="1" data-name="北京"><a href="#none">北京</a></li>
+                                <li data-value="2" data-name="上海"><a href="#none">上海</a></li>
+                                <li data-value="3" data-name="天津"><a href="#none">天津</a></li>
+                                <li data-value="4" data-name="重庆"><a href="#none">重庆</a></li>
+                                <li data-value="5" data-name="河北"><a href="#none">河北</a></li>
+                                <li data-value="6" data-name="山西"><a href="#none">山西</a></li>
+                                <li data-value="7" data-name="河南"><a href="#none">河南</a></li>
+                                <li data-value="8" data-name="辽宁"><a href="#none">辽宁</a></li>
+                                <li data-value="9" data-name="吉林"><a href="#none">吉林</a></li>
+                                <li data-value="10" data-name="黑龙江"><a href="#none">黑龙江</a></li>
+                                <li data-value="11" data-name="内蒙古"><a href="#none">内蒙古</a></li>
+                                <li data-value="12" data-name="江苏"><a href="#none">江苏</a></li>
+                                <li data-value="13" data-name="山东"><a href="#none">山东</a></li>
+                                <li data-value="14" data-name="安徽"><a href="#none">安徽</a></li>
+                                <li data-value="15" data-name="浙江"><a href="#none">浙江</a></li>
+                                <li data-value="16" data-name="福建"><a href="#none">福建</a></li>
+                                <li data-value="17" data-name="湖北"><a href="#none">湖北</a></li>
+                                <li data-value="18" data-name="湖南"><a href="#none">湖南</a></li>
+                                <li data-value="19" data-name="广东"><a href="#none">广东</a></li>
+                                <li data-value="20" data-name="广西"><a href="#none">广西</a></li>
+                                <li data-value="21" data-name="江西"><a href="#none">江西</a></li>
+                                <li data-value="22" data-name="四川"><a href="#none">四川</a></li>
+                                <li data-value="23" data-name="海南"><a href="#none">海南</a></li>
+                                <li data-value="24" data-name="贵州"><a href="#none">贵州</a></li>
+                                <li data-value="25" data-name="云南"><a href="#none">云南</a></li>
+                                <li data-value="26" data-name="西藏"><a href="#none">西藏</a></li>
+                                <li data-value="27" data-name="陕西"><a href="#none">陕西</a></li>
+                                <li data-value="28" data-name="甘肃"><a href="#none">甘肃</a></li>
+                                <li data-value="29" data-name="青海"><a href="#none">青海</a></li>
+                                <li data-value="30" data-name="宁夏"><a href="#none">宁夏</a></li>
+                                <li data-value="31" data-name="新疆"><a href="#none">新疆</a></li>
+                                <li data-value="32" data-name="台湾"><a href="#none">台湾</a></li>
+                                <li data-value="52993" data-name="港澳"><a href="#none">港澳</a></li>
+                                <li data-value="84" data-name="钓鱼岛"><a href="#none">钓鱼岛</a></li>
+                            </ul>
+                            <ul class="item">
+                                <li data-name="朝阳区" data-value="72" class=""><a href="#none">朝阳区</a></li>
+                                <li data-name="海淀区" data-value="2800" class=""><a href="#none">海淀区</a></li>
+                                <li data-name="西城区" data-value="2801" class=""><a href="#none">西城区</a></li>
+                                <li data-name="东城区" data-value="2802" class=""><a href="#none">东城区</a></li>
+                                <li data-name="崇文区" data-value="2803" class=""><a href="#none">崇文区</a></li>
+                                <li data-name="宣武区" data-value="2804" class=""><a href="#none">宣武区</a></li>
+                                <li data-name="丰台区" data-value="2805" class=""><a href="#none">丰台区</a></li>
+                                <li data-name="石景山区" data-value="2806" class=""><a href="#none">石景山区</a></li>
+                                <li data-name="门头沟" data-value="2807" class=""><a href="#none">门头沟</a></li>
+                                <li data-name="房山区" data-value="2808" class=""><a href="#none">房山区</a></li>
+                                <li data-name="通州区" data-value="2809" class=""><a href="#none">通州区</a></li>
+                                <li data-name="大兴区" data-value="2810" class=""><a href="#none">大兴区</a></li>
+                                <li data-name="顺义区" data-value="2812" class=""><a href="#none">顺义区</a></li>
+                                <li data-name="怀柔区" data-value="2814" class=""><a href="#none">怀柔区</a></li>
+                                <li data-name="密云区" data-value="2816" class=""><a href="#none">密云区</a></li>
+                                <li data-name="昌平区" data-value="2901" class=""><a href="#none">昌平区</a></li>
+                                <li data-name="平谷区" data-value="2953" class=""><a href="#none">平谷区</a></li>
+                                <li data-name="延庆县" data-value="3065" class=""><a href="#none">延庆县</a></li>
+                            </ul>
+                            <ul class="item hide">
+                                <li data-name="四环到五环之间" data-value="2839" class="long-area"><a href="#none">四环到五环之间</a>
+                                </li>
+                                <li data-name="管庄" data-value="4137" class=""><a href="#none">管庄</a></li>
+                                <li data-name="北苑" data-value="4139" class=""><a href="#none">北苑</a></li>
+                                <li data-name="定福庄" data-value="4211" class=""><a href="#none">定福庄</a></li>
+                                <li data-name="三环以内" data-value="2799" class=""><a href="#none">三环以内</a></li>
+                                <li data-name="五环到六环之间" data-value="2840" class="long-area"><a href="#none">五环到六环之间</a>
+                                </li>
+                                <li data-name="三环到四环之间" data-value="2819" class="long-area"><a href="#none">三环到四环之间</a>
+                                </li>
+                            </ul>
+                            <div class="hide">请选择</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

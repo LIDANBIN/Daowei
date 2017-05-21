@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 //引入模块
-var router = require('./../Daowei/routes/router.js');
+var router = require('./routes/router.js');
 var expressSession = require('express-session');
 
 var app = express();

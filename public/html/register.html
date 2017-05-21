@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="keywords" content="到位，到家，上门服务，家政服务，上门维修，上门按摩，搬家，北京家政服务，上海家政服务">
+    <meta name="description"
+          content="到位是中国领先的O2O上门服务平台，汇聚上万种高品质到家服务。家政服务，上门按摩，上门维修，搬家，一站直约，安心到家。现已覆盖北京，上海，深圳，广州，杭州等70多个城市。">
+    <title>到位-商家管理后台</title>
+    <link rel="shortcut icon" href="../img/icon/favicon.png">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/register.css">
+    <script src="../js/jquery-1.10.1.js"></script>
+    <script src="../js/gVerify.js"></script>
+    <script type="text/javascript" src="../js/login_register.js"></script>
+</head>
+<body>
+<div class="login-wrapper">
+    <h1>到位商家后台</h1>
+    <form action="" method="" id="">
+        <div>
+            <input type="text" name="userName" id="r_userName" placeholder="请输入手机号"><span id="userNameSpan"></span>
+        </div>
+        <div id="phone" class="prompt hide">请输入正确的手机号码</div>
+        <div class="pic clearfix">
+            <div id="v_container">
+                <canvas id="verifyCanvas" width="207px" height="50" style="cursor: pointer;"></canvas>
+            </div>
+            <span>获取验证码</span>
+            <input id="code_input" type="text" name="passWord" placeholder="请输入图片中的字符串">
+        </div>
+        <div id="false" class="prompt hide">验证码错误</div>
+        <!--<div id="true" class="prompt hide">验证码正确</div>-->
+        <div>
+            <input type="password" name="passWord" placeholder="请输入验证码">
+        </div>
+        <div>
+            <input type="password" name="passWord" id="r_password" placeholder="请输入密码">
+        </div>
+        <div id="user" class="prompt hide">用户名已被注册</div>
+    </form>
+    <button id="my_button">注册</button>
+
+    <div class="else">
+        <a href="/login"><span>已有账户？登录</span></a>
+    </div>
+</div>
+</body>
+</html>

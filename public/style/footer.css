@@ -1,0 +1,66 @@
+/*底部*/
+@media (max-width: 768px) {
+    footer {
+        width: 768px;
+    }
+}
+footer div{
+    padding-top: 60px;
+    text-align: center;
+}
+
+/*担保*/
+footer .guarantee h2 {
+    margin: 20px 0 10px 0;
+    font-size: 28px;
+    font-weight: 800;
+}
+footer .guarantee p {
+    font-size: 20px;
+    color: #3d3838;
+}
+.guarantee h2 i {
+    font-weight: 800;
+    color: rgb(233, 72, 64);
+}
+
+/*支持*/
+.support ul li {
+    float: left;
+    font-size: 18px;
+    width: 33%;
+}
+.support ul li img {
+    margin-bottom: 5px;
+}
+/*左侧固定，右侧自适应*/
+.hot-city dt {
+    float: left;
+    font-size: 13px;
+    font-weight: 700;
+}
+.hot-city dd {
+    overflow: hidden;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+.hot-city dd i {
+    float: left;
+    text-align: center;
+    margin: 5px;
+    width: 110px;
+    font-size: 16px;
+    color: #898989;
+    display: inline-block;
+    font-weight: 200;
+    cursor: pointer;
+}
+/*版权*/
+.record {
+    background: rgb(251,248,248);
+}
+.record p {
+    color: #898989;
+    font-size: 13px;
+    padding-bottom: 21px;
+}
