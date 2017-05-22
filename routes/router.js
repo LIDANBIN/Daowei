@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var router = express.Router();
 
-var logic = require('./daowei_logic.js');
+var logic = require('../logic/daowei_logic.js');
 
 // 请求首页数据
 router.post('/', logic.post_index);

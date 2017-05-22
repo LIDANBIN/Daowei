@@ -1,12 +1,12 @@
 var path = require('path');
-var db = require('./login_dao.js');
+var db = require('../dao/login_dao.js');
 
-var data = require('./China_area.json');
+var data = require('../data/China_area.json');
 var provinces = data.provinceJson;
 var cities = data.cityJson;
 var counties = data.countyJson;
 
-var web_data = require('./web_info.json');
+var web_data = require('../data/web_info.json');
 var top_category = web_data.top_category;
 var sub_category = web_data.sub_category;
 var services = web_data.services;
